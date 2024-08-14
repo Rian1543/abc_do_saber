@@ -5,3 +5,8 @@ from django.http import HttpResponse
 def inicio(request):
     return HttpResponse ('<html><body><h2>Pagina Tipo Atividades</h2><p>Olá, esta é a página tipos atividades</p></body></html>')
 
+def cadastrar(request):
+    return render(request,'tipoAtividade/cadastroTiposAtividade.html')
+
+def listar(request):
+     return render(request,'tipoAtividade/listarTiposAtividade.html')
