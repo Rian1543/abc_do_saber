@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -9,7 +10,7 @@
         integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     
     <!-- <script src="js/aula17.js" defer></script> --> 
-    <link href="../css/meu-estilo.css" rel="stylesheet">
+    <link href="{% static './css/meu-estilo.css' %}" rel="stylesheet">
 </head>
 <body>
 
@@ -20,7 +21,7 @@
             <!-- logo -->
             <div>
                 <a class="navbar-brand mx-auto">
-                    <img src="../img/php_96.png">
+                    <img src="{% static './img/php_96.png' %}">
                 </a>
             </div>
 
@@ -32,9 +33,9 @@
             <!-- menu -->
             <div class="collapse navbar-collapse justify-content-end" id="mynavbar">
                 <div class="navbar-nav">
-                    <a href="../escola.html" class="nav-link">Início</a>
-                    <a href="#" class="nav-link">Cadastrar</a>
-                    <a href="listarTiposAtividade.html" class="nav-link">Listar</a>
+                    <a href="{% url 'escola' %}" class="nav-link">Início</a>
+                    <a href="{% url 'cadastrar' %}" class="nav-link">Cadastrar</a>
+                    <a href="{% url 'listar' %}" class="nav-link">Listar</a>
                 </div>
             </div>
         </nav>
