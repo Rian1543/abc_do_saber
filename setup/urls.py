@@ -23,5 +23,7 @@ from tipoAtividade.views import inicio
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('escola/',include('escola.urls')),
-    path('tipoAtividade/',include('tipoAtividade.urls'))
+    path('tipoAtividade/',include('tipoAtividade.urls')),
+    path('titulo/',include('titulo.urls')),
+    
 ]
