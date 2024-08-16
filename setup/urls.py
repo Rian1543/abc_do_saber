@@ -25,5 +25,7 @@ urlpatterns = [
     path('escola/',include('escola.urls')),
     path('tipoAtividade/',include('tipoAtividade.urls')),
     path('titulo/',include('titulo.urls')),
-    
+    path('instrutor/',include('instrutor.urls')),
+    path('aluno/',include('aluno.urls')), 
+    path('contato/',include('contato.urls')),   
 ]
