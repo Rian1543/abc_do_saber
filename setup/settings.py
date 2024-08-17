@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     'instrutor.apps.InstrutorConfig',
     'aluno.apps.AlunoConfig',
     'contato.apps.ContatoConfig',
+    'turma.apps.TurmaConfig',
 ]
 
 MIDDLEWARE = [
