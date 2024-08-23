@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from tipoAtividade.models import TipoAtividade
 
 # Create your views here.
 def inicio(request):
@@ -9,4 +10,8 @@ def cadastrar(request):
     return render(request,'tipoAtividade/cadastroTiposAtividade.html')
 
 def listar(request):
-     return render(request,'tipoAtividade/listarTiposAtividade.html')
+    
+    registros=TipoAtividade.objects.all()
+    
+    contexto={'tipos_atividades_lista':registros}
+    return render(request,'tipoAtividade/listarTiposAtividade.html',contexto)
