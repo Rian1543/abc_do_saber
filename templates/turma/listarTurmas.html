@@ -101,39 +101,21 @@
 
                 <!-- linhas -->
                 <tbody>
-                    <tr>
-                        <td> 1 </td>
-                        <td> 10:00:00 </td>
-                        <td> 2 </td>
-                        <td> 01/03/2022 </td>
-                        <td> -- </td>
-                        <td> Programador Web </td>
-                        <td> Jefferson Gonçalves </td>
-                        <td> Professor Doutor </td>
-                        <td> Marcos Ferreira </td>
-                    </tr>
-                    <tr>
-                        <td> 2 </td>
-                        <td> 13:00:00 </td>
-                        <td> 4 </td>
-                        <td> 01/03/2022 </td>
-                        <td> -- </td>
-                        <td> Programador Web </td>
-                        <td> Jefferson Gonçalves </td>
-                        <td> Professor Doutor </td>
-                        <td> José Mauro </td>
-                    </tr>
-                    <tr>
-                        <td> 3 </td>
-                        <td> 18:00:00 </td>
-                        <td> 4 </td>
-                        <td> 01/03/2022 </td>
-                        <td> -- </td>
-                        <td> Programador Web </td>
-                        <td> Jefferson Gonçalves </td>
-                        <td> Professor Doutor </td>
-                        <td> Hian Ferreira </td>
-                    </tr>
+                    {% for turma in turma_lista %}
+                <tr>
+                    <td>{{turma.numero}}</td>
+                    <td>{{turma.horariodaaula}}</td>
+                    <td>{{turma.duracaodaaula}}</td>
+                    <td>{{turma.datainicial}}</td>
+                    <td>{{turma.datafinal}}</td>
+                    <td>{{turma.atividade}}</td>
+                    <td>{{turma.instrutor}}</td>
+                    <td>{{turma.titularidade}}</td>
+                    <td>{{turma.alunomonitor}}</td>
+                    
+                </tr>
+                {% endfor %}
+                    
                 </tbody>
             </table>
 
