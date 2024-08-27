@@ -6,4 +6,5 @@ urlpatterns = [
     #path('',views.inicio,name='index')
     path('',views.cadastrar,name='cadastrar_titulo'),
     path('listar/',views.listar,name='listar_titulo'),
+    path('cadastro/',views.cadastro,name='cadastro_titulo'),
 ]

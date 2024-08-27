@@ -92,14 +92,14 @@
                 </thead>
 
                 <!-- linhas -->
-                {% for titulo in tipos_titulo %}
+                {% for titulo in titulo_lista %}
                 <tr>
                     <td>{{titulo.codigo}}</td>
                     <td>{{titulo.descricao}}</td>
                 </tr>
                 {% empty %}
                 <tr>
-                    
+                    <td colspan="2">não existem titulos cadastrados</td> 
                 </tr>
                 {% endfor %}
 
